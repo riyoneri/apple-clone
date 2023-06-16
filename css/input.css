@@ -1,14 +1,26 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-    font-family: ;
-    src: url("/assets/fonts/") format("opentype");
-} */
+@font-face {
+    font-family: Pro-Text-Regular;
+    src: url("/assets/fonts/sf-pro-text_regular.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: Pro-Text-Bold;
+    src: url("/assets/fonts/sf-pro-text_bold.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: Pro-Text-Semibold;
+    src: url("/assets/fonts/sf-pro-text_semibold.woff2") format("opentype");
+}
 
 @layer components {
     .limit-width {
-        @apply 2xl:max-w-5xl 2xl:mx-auto;
+        @apply 2xl:w-[2000px] 2xl:mx-auto;
     }
 }
